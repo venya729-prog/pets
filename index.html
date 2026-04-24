@@ -13,7 +13,7 @@
 
     <header class="container">
 
-        <img class="logo" src="">
+        <img class="logo" src="IMG_7154-removebg-preview.png">
         <nav class="information">
 
             <a href="">Про нас</a>
@@ -32,21 +32,22 @@
 
 
 
-    <main>
+    <main class="container">
+
 
         
-        <section class="row">
+        <section class="row main-section">
             <div class="col-8 main-left">
                 <h1 class="slogan">Не шукайте ідеальних — шукайте своїх. Ваша зустріч змінить два життя одночасно</h1>
-        <p>Знайдіть собі чоторилапого друга</p>
-                <h3 class="main-title"> any text </h3>
+        
+              <h3 class="main-title"> Знайдіть собі чоторилапого друга</h3>
 
             </div>
 
-            <div class="col-3 img-block">
+            <div class="col-4 img-block">
 
                 <img class="img-main"
-                    src="https://internationaldogtrainerschool.com/wp-content/uploads/2022/02/high-five-dog-paw-human-hand-577x385.jpg">
+                    src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
 
 
 
@@ -55,11 +56,71 @@
 
         </section>
 
+        <section class=" filter-section">
+            <div class="filter-bar">
+                <div class="filter-item search-input-group">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Населений пункт">
+
+                </div>
+
+                <div class="filter-item">
+                    <select>
+                        <option value="" disabled selected>Вид тварини</option>
+                        <option value="dog">Собака</option>
+                        <option value="cat">Кіт</option>
+                    </select>
+                </div>
+
+                <div class="filter-item">
+                    <select>
+                        <option value="" disabled selected>Розмір</option>
+                        <option value="large">Велика</option>
+                        <option value="medium">Середня</option>
+                        <option value="small">Маленька</option>
+                    </select>
+                </div>
+
+                 <div class="filter-item">
+                    <select>
+                        <option value="" disabled selected>Стать</option>
+                        <option value="large">Дівчинка</option>
+                        <option value="medium">Хлопчик</option>
+                    </select>
+                </div>
+
+                 <div class="filter-item">
+                    <select>
+                        <option value="" disabled selected>Порода</option>
+                        <option value="large">Породистий</option>
+                        <option value="medium">Безпордний</option>
+                        
+                    </select>
+                </div>
+
+                <button class="btn-search">Пошук</button>
+
+            </div>
+        </section>
+
+        <section>
+            <h2> Альбом</h2>
+            <div class="row" id="animals">
+
+            </div>
+
+
+
+        </section>
+
     </main>
 
 
     <footer>
-        <img class="logo2" href="">
+        <!-- <img class="logo2" href=""> -->
         <nav>
             <a href="">Телефон</a>
             <a href="">Пошта</a>
@@ -70,7 +131,7 @@
 
     </footer>
 
-
+    <script src="./script.js"></script>
 </body>
 
 </html>

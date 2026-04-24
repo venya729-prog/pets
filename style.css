@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* 
 color bg #E0FFFF #AFEEEE
 color text  black
@@ -89,11 +91,16 @@ fonts
     width: 100%;
 }
 
-.footer{
+footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: rgb(3, 2, 0);
+    background:#f0f9fa;
+    gap: 20px;
+}
+
+.logo{
+    width: 120px;
 }
 
 .logo2{
@@ -104,16 +111,17 @@ footer a{
     color: black;
 }
 
-
-
-
+/* Колір фону сайту */
+body {
+    background:#f1efec;
+}
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background:#f0f9fa;
-
+    border-radius: 20px;
 }
 
 .information{
@@ -126,24 +134,55 @@ header{
 
 .information a {
     color:#111b1c;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
-    font-family:"Red Hat Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:200px;
-  font-style: normal; ;
-  width: 75px;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:200px;
+    font-style: normal;
+    width: 75px;
 
 }
-
+.main-section {
+    margin-top: 50px;
+}
 
 
 .main-title{
-      text-align: center;
-      color: black;
-      align-items: center;
+    text-align: center;
+    color: black;
+    align-items: center;
+    font-family: "Google Sans", sans-serif;
+    font-size:30px;
 }
 
+.slogan{
+    font-family: "Google Sans", sans-serif;
+    font-size:60px;
+    margin: 40px;
+}
+h2{
+    font-family: "Google Sans", sans-serif;
+    font-size: 45px;
+     display: flex;
+     justify-content: center;
+
+}
+
+.names{
+     font-family: "Google Sans", sans-serif;
+     font-size: 27px;
+     display: flex;
+     justify-content: center;
+}
+
+.dates{
+     font-family: "Google Sans", sans-serif;
+     display: flex;
+     justify-content: center;
+     font-size: 13px;
+     
+}
 .main-left{
       display: flex;
       align-items: center;
@@ -152,15 +191,126 @@ header{
 }
 
 .img-block {
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 20px;
     /* width: 100%; */
 
 }
 
 .img-main{
-    width:450px;
-    /* height: 500px; */
-    /* margin-right:; */
-    border-radius: 20px;
-    /* padding-right: 100px; */
+    width:100%;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
+
+.card{
+    background: #f0f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.btn-adopt{
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    background: rgb(93, 57, 57);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-adopt:hover {
+    background: #785858;;
+}
+
+.filter-section {
+	margin: 40px 0px;
+	width:100%;
+	display: flex; 
+	justify-content:center;
+}
+
+.filter-bar {
+	display:flex;
+	align-items:center;
+	background-color: #f0f9fa;
+	border-radius: 50px;
+	padding: 20px 15px ; 
+	flex-wrap: wrap;
+	gap: 10px;
+	width:100%;
+
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+
+    position: relative; 
+    padding:  5px 10px;
+}
+
+.search-input-group {
+    flex: 1;
+    min-width: 180px;
+    color: #333;
+}
+.search-input-group svg {
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+.filter-bar input[type="text"] {
+    border: none;
+    outline: none;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+    width: 100%;
+    background: transparent;
+}
+
+.filter-bar select {
+    border: none;
+    outline: none;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-search {
+	background-color: rgb(93, 57, 57);
+    color: white;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 30px;
+	font-size:22px;
+	font-family: "Red Hat Display", sans-serif;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.btn-search:hover {
+    background-color: #785858 ;
+}
+
